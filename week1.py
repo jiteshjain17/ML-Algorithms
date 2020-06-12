@@ -1,11 +1,14 @@
+#Importing libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+#Importing files
 X_train = pd.read_csv("C:/Users/jites/Desktop/Linear_X_Train week 1")
 y_train = pd.read_csv("C:/Users/jites/Desktop/Linear_Y_Train.csv")
 X_test = pd.read_csv("C:/Users/jites/Desktop/Linear_X_Test.csv")
 
+#Fitting simple linear regression to training set
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
