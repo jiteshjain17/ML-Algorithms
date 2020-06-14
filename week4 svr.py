@@ -41,7 +41,7 @@ def reg_score(y_test, y_pred):
     print("r2 score: ", r2_score(y_test, y_pred))
     print("MAE score: ", mean_absolute_error(y_test, y_pred))
 
-#Fitting Random forest to dataset
+#Fitting SVR to dataset
 from sklearn.svm import  SVR
 svr = SVR(kernel='rbf')
 svr.fit(X_train, y_train)
