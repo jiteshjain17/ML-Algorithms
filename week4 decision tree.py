@@ -41,7 +41,7 @@ def reg_score(y_test, y_pred):
     print("r2 score: ", r2_score(y_test, y_pred))
     print("MAE score: ", mean_absolute_error(y_test, y_pred))
 
-#Fitting decision tree forest to dataset
+#Fitting decision tree to dataset
 from sklearn.tree import DecisionTreeRegressor
 regressor = DecisionTreeRegressor(random_state=0)
 regressor.fit(X_train, y_train)
