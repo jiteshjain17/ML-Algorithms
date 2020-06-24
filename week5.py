@@ -112,7 +112,7 @@ classifier.fit(X_train, y_train.values.ravel())
 print(classifier.score(X_train, y_train))
 
 #Checking results on training set
-y_pred = classifier.predict(y_train)
+y_pred = classifier.predict(X_train)
 
 #Confusion matrix
 from sklearn.metrics import confusion_matrix
